@@ -26,11 +26,11 @@ public class SinkingView extends FrameLayout {
         super(context, attrs);
     }
 
-    private void setTextColor(int color) {
+    public void setTextColor(int color) {
         mTextColot = color;
     }
 
-    private void setTextSize(int size) {
+    public void setTextSize(int size) {
         mTextSize = size;
     }
 
@@ -39,6 +39,10 @@ public class SinkingView extends FrameLayout {
         mPercent = percent;
         postInvalidate();
 
+    }
+
+    public void setStatus(Status status) {
+        mFlag = status;
     }
 
     public void clear() {
@@ -78,7 +82,6 @@ public class SinkingView extends FrameLayout {
             mLeft += mSpeed;
             if (mLeft >= mScaledBitmap.getWidth())
                 mLeft = 0;
-
             postInvalidateDelayed(20);
         }
 
