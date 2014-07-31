@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Sinking-view</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_grid_demo">Grid Demo</string>
     <string name="hello_world">Hello world!</string>
 
 </resources>
